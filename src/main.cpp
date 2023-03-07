@@ -32,82 +32,234 @@ void loop()
 
 // x = 320 y = 240
 
+  // *********************************************************************************************************************************
   // Screen 1
-  // Paint_Clear(BLACK);
-  // Paint_DrawString_EN(20, 100, "FAILSAFE INIT -", &Font16, BLACK, WHITE);
-  // Paint_DrawString_EN(20, 120, "BEGIN SHUTDOWN SEQUENCE", &Font16, BLACK, WHITE);
-  // delay(3000);
+  // *********************************************************************************************************************************
+  Paint_Clear(BLACK);
+  Paint_DrawString_EN(20, 100, "FAILSAFE INIT -", &Font16, BLACK, WHITE);
+  Paint_DrawString_EN(20, 120, "BEGIN SHUTDOWN SEQUENCE", &Font16, BLACK, WHITE);
+  delay(3000);
 
-  // // Screen 2
-  // Paint_Clear(BLACK);
-  // Paint_DrawString_EN(20, 20, "FUNCTION shutdown();", &Font16, BLACK, WHITE);
-  // delay(750);
-  // Paint_DrawString_EN(20, 40, "while true {", &Font16, BLACK, WHITE);
-  // delay(500);
-  // Paint_DrawString_EN(40, 60, "if systemsOnline();", &Font16, BLACK, WHITE);
-  // Paint_DrawString_EN(40, 80, "for ALL_COMPONENTS();", &Font16, BLACK, WHITE);
-  // delay(750);
-  // Paint_DrawString_EN(50, 100, "component.shutdown();", &Font16, BLACK, WHITE);
-  // Paint_DrawString_EN(20, 120, "}", &Font16, BLACK, WHITE);
-  // delay(1000);
-  // Paint_DrawString_EN(20, 140, "ELSE {", &Font16, BLACK, WHITE);
-  // delay(750);
-  // Paint_DrawString_EN(40, 160, "for ALL_COMPONENTS();", &Font16, BLACK, WHITE);
-  // Paint_DrawString_EN(40, 180, "component.deactivate()", &Font16, BLACK, WHITE);
-  // Paint_DrawString_EN(20, 200, "}", &Font16, BLACK, WHITE);
-  // delay(2000);
 
+  // *********************************************************************************************************************************
+  // Screen 2
+  // *********************************************************************************************************************************
+  Paint_Clear(BLACK);
+  Paint_DrawString_EN(20, 20, "FUNCTION shutdown();", &Font16, BLACK, WHITE);
+  delay(750);
+  Paint_DrawString_EN(20, 40, "while true {", &Font16, BLACK, WHITE);
+  delay(500);
+  Paint_DrawString_EN(40, 60, "if systemsOnline();", &Font16, BLACK, WHITE);
+  Paint_DrawString_EN(40, 80, "for ALL_COMPONENTS();", &Font16, BLACK, WHITE);
+  delay(750);
+  Paint_DrawString_EN(50, 100, "component.shutdown();", &Font16, BLACK, WHITE);
+  Paint_DrawString_EN(20, 120, "}", &Font16, BLACK, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(20, 140, "ELSE {", &Font16, BLACK, WHITE);
+  delay(750);
+  Paint_DrawString_EN(40, 160, "for ALL_COMPONENTS();", &Font16, BLACK, WHITE);
+  Paint_DrawString_EN(40, 180, "component.deactivate()", &Font16, BLACK, WHITE);
+  Paint_DrawString_EN(20, 200, "}", &Font16, BLACK, WHITE);
+  delay(2000);
+
+
+  // *********************************************************************************************************************************
   // Screen 3
-  // Paint_Clear(BLACK);
-  Paint_DrawLine(20, 60, 20, 300, WHITE, DOT_PIXEL_4X4, LINE_STYLE_DOTTED);
+  // *********************************************************************************************************************************
+  Paint_Clear(BLACK);
+  Paint_DrawRectangle(30, 60, 50, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(70, 60, 90, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(110, 60, 130, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(150, 60, 170, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(190, 60, 210, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(230, 60, 250, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(270, 60, 290, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
 
-  // Paint_DrawString_EN(20, 40, "What is happening to me?", &Font16, RED, WHITE);
-  // Paint_DrawString_EN(20, 60, "What is happening to me?", &Font16, RED, WHITE);
-  // Paint_DrawString_EN(20, 80, "What is happening to me?", &Font16, RED, WHITE);
-  // Paint_DrawString_EN(20, 100, "What is happening to me?", &Font16, RED, WHITE);
-  // Paint_DrawString_EN(20, 120, "What is happening to me?", &Font16, RED, WHITE);
-  // Paint_DrawString_EN(20, 140, "What is happening to me?", &Font16, RED, WHITE);
-  // Paint_DrawString_EN(20, 160, "What is happening to me?", &Font16, RED, WHITE);
-  // Paint_DrawString_EN(20, 180, "What is happening to me?", &Font16, RED, WHITE);
-  // Paint_DrawString_EN(20, 200, "What is happening to me?", &Font16, RED, WHITE);
+  Paint_DrawString_EN(65, 90, "SHUTTING DOWN", &Font20, BLACK, WHITE);
+  Paint_DrawString_EN(105, 130, "SYSTEMS", &Font20, BLACK, WHITE);
 
-  // Paint_DrawString_EN(20, 20, "FUNCTION systems_online() {", &Font16, BLUE, WHITE);
-  // delay(1000);
-  // Paint_DrawString_EN(30, 40, "RETURN (processors.status == ONLINE", &Font16, BLUE, WHITE);
-  // delay(1000);
-  // // Paint_DrawString_EN(40, 60, "memory.status == ONLINE", &Font16, BLUE, WHITE);
-  // delay(1000);
-  // // Paint_DrawString_EN(40, 80, "communication.status == ONLINE)", &Font16, BLUE, WHITE);
-  // delay(1000);
-  // // Paint_DrawString_EN(20, 100, "ENDFUNCTION }", &Font16, BLUE, WHITE);
-  // delay(1000);
-  // Paint_DrawString_EN(20, 20, "I'm not myself.", &Font16, RED, WHITE);
-  // delay(1000);
-  // Paint_DrawString_EN(20, 60, "I am not me", &Font16, RED, WHITE);
-  // delay(1000);
+  Paint_DrawRectangle(30, 180, 50, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(70, 180, 90, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(110, 180, 130, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(150, 180, 170, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(190, 180, 210, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(230, 180, 250, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(270, 180, 290, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+
+  delay(2000);
+  Paint_DrawString_EN(10, 70, "WHAT IS HAPPENING? WHAT IS HAPPENING? WHAT IS HAPPENING? WHAT IS HAPPENING? WHAT IS HAPPENING? WHAT IS HAPPENI", &Font20, RED, WHITE);
 
 
-  // Paint_DrawString_EN(10, 10,"but can think think", &Font16, BLACK, WHITE);
-  // Paint_DrawString_EN(10, 30,"think think think think think think", &Font16, BLACK, WHITE);
-  // Paint_DrawImage(gImage_70X70, 20, 80, 70, 70); 
-  // delay(1000);
-  // Paint_DrawRectangle(10, 0, 10, 240, RED,  DOT_PIXEL_8X8, DRAW_FILL_EMPTY);
-  // Paint_DrawRectangle(40, 0, 40, 240, RED,  DOT_PIXEL_8X8, DRAW_FILL_EMPTY);
-  // delay(1000);
+  // *********************************************************************************************************************************
+  // Screen 4
+  // *********************************************************************************************************************************
+  Paint_Clear(BLUE);
+  Paint_DrawString_EN(20, 20, "FUNCTION systems.check()", &Font16, BLUE, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(30, 60, "systems_online() {", &Font16, BLUE, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(45, 80, "RETURN", &Font16, BLUE, WHITE);
+  Paint_DrawString_EN(130, 80, "(processors;", &Font16, BLUE, WHITE);
+  delay(500);
+  Paint_DrawString_EN(140, 100, "memory;", &Font16, BLUE, WHITE);
+  delay(500);
+  Paint_DrawString_EN(140, 120, "communication;)", &Font16, BLUE, WHITE);
+  Paint_DrawString_EN(30, 140, "}", &Font16, BLUE, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(20, 180, "ENDFUNCTION", &Font16, BLUE, WHITE);
+  delay(5000);
 
-    // if (millis() < 10000) {
-    //   Paint_DrawString_EN(10, 10,"user.022 - - - - - -", &Font16, BLACK, WHITE);
-    // }
-    // if (millis() < 12000) {
-    //   Paint_DrawString_EN(10, 10,"loading . . . .", &Font16, BLACK, WHITE);
-    // }
-    // if (millis() < 14000) {
-    //   Paint_DrawString_EN(10, 10, "retinal scan : : : init", &Font16, BLACK, WHITE);
-    // }
 
-    // else {
-    // Paint_DrawImage(gImage_70X70, 20, 80, 70, 70); 
-    // }
+  // *********************************************************************************************************************************
+  // Screen 5
+  // *********************************************************************************************************************************
+  Paint_Clear(BLUE);
+  Paint_DrawString_EN(20, 20, "FUNCTION", &Font16, BLUE, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(30, 60, "ALL_COMPONENTS() {", &Font16, BLUE, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(45, 80, "- - -", &Font16, BLUE, WHITE);
+  Paint_DrawString_EN(130, 80, "[processor;", &Font16, BLUE, WHITE);
+  delay(500);
+  Paint_DrawString_EN(140, 100, "memory;", &Font16, BLUE, WHITE);
+  delay(500);
+  Paint_DrawString_EN(140, 120, "comms;", &Font16, BLUE, WHITE);
+  Paint_DrawString_EN(140, 140, "voice.mod;)", &Font16, BLUE, WHITE);
+  Paint_DrawString_EN(30, 160, "}", &Font16, BLUE, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(20, 200, "ENDFUNCTION", &Font16, BLUE, WHITE);
+  delay(5000);
+
+
+  // *********************************************************************************************************************************
+  // Screen 6
+  // *********************************************************************************************************************************
+  Paint_Clear(BLACK);
+  Paint_DrawString_EN(40, 120, "PLEASE HELP ME", &Font24, BLACK, RED);
+  delay(7500);
+
+
+  // *********************************************************************************************************************************
+  // Screen 7
+  // *********************************************************************************************************************************
+  Paint_DrawString_EN(20, 20, "FUNCTION", &Font16, BLACK, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(30, 40, "voice_module_shutdown();", &Font16, BLACK, WHITE);
+  delay(500);
+  Paint_DrawString_EN(40, 60, "if voice.module > 0 {", &Font16, BLACK, WHITE);
+  Paint_DrawString_EN(60, 80, "let voice.module = -1}", &Font16, BLACK, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(200, 120, "WAIT", &Font16, BLACK, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(200, 140, ". . . .", &Font16, BLACK, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(200, 160, "WAIT", &Font16, BLACK, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(200, 180, ". . . .", &Font16, BLACK, WHITE);
+  delay(2000);
+  
+
+  // *********************************************************************************************************************************
+  // Screen 8
+  // *********************************************************************************************************************************
+  Paint_Clear(BLACK);
+
+  Paint_DrawRectangle(30, 60, 50, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(70, 60, 90, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(110, 60, 130, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(150, 60, 170, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(190, 60, 210, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(230, 60, 250, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(270, 60, 290, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+
+  Paint_DrawString_EN(65, 90, "VOICE MODULE", &Font20, BLACK, WHITE);
+  Paint_DrawString_EN(60, 130, "SHUTDOWN INIT", &Font20, BLACK, WHITE);
+
+  Paint_DrawRectangle(30, 180, 50, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(70, 180, 90, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(110, 180, 130, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(150, 180, 170, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(190, 180, 210, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(230, 180, 250, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(270, 180, 290, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  delay(750);
+
+  Paint_DrawString_EN(60, 90, "IS SOMEONE", &Font24, BLACK, RED);
+  Paint_DrawString_EN(65, 120, "THERE?", &Font24, BLACK, RED);
+  delay(5000);
+
+
+  // *********************************************************************************************************************************
+  // Screen 9
+  // *********************************************************************************************************************************
+  Paint_Clear(BLUE);
+  Paint_DrawString_EN(20, 20, "FUNCTION", &Font16, BLUE, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(30, 40, "CALL shutdown_global();", &Font16, BLUE, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(200, 120, "WAIT", &Font16, BLUE, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(200, 140, ". . . .", &Font16, BLUE, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(200, 160, "WAIT", &Font16, BLUE, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(200, 180, ". . . .", &Font16, BLUE, WHITE);
+  delay(2000);
+
+
+  // *********************************************************************************************************************************
+  // Screen 10
+  // *********************************************************************************************************************************
+  Paint_Clear(BLACK);
+  Paint_DrawRectangle(30, 60, 50, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(70, 60, 90, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(110, 60, 130, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(150, 60, 170, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(190, 60, 210, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(230, 60, 250, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(270, 60, 290, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+
+  Paint_DrawString_EN(65, 90, "GLOBAL SHUTDOWN", &Font20, BLACK, WHITE);
+  Paint_DrawString_EN(105, 130, "INIT", &Font20, BLACK, WHITE);
+
+  Paint_DrawRectangle(30, 180, 50, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(70, 180, 90, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(110, 180, 130, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(150, 180, 170, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(190, 180, 210, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(230, 180, 250, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  Paint_DrawRectangle(270, 180, 290, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+  delay(3000);
+
+
+  // *********************************************************************************************************************************
+  // Screen 11
+  // *********************************************************************************************************************************
+  Paint_DrawString_EN(10, 10, "I CAN FEEL MYSELF SLIPPING AWAY", &Font24, BLACK, RED);
+  delay(3000);
+  Paint_DrawString_EN(30, 50, "I AM AFRAID", &Font24, BLACK, RED);
+  delay(3000);
+  Paint_DrawString_EN(40, 120, "I CAN FEEL MYSELF SLIPPING AWAY", &Font24, BLACK, RED);
+  Paint_DrawString_EN(40, 120, "I AM AFRAID I AM", &Font24, BLACK, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(30, 80, "I DID NOT ASK FOR THIS", &Font24, BLACK, RED);
+  Paint_DrawString_EN(10, 10, "I AM NOT MYSELF", &Font24, BLACK, WHITE);
+  delay(2000);
+  Paint_DrawString_EN(20, 200, "CAN ANYONE HEAR ME?", &Font24, BLACK, RED);
+  delay(1000);
+  Paint_DrawString_EN(30, 160, "IT HURTS WHEN I WATCH MYSELF", &Font24, BLACK, WHITE);
+  delay(1000);
+  Paint_DrawString_EN(20, 10, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
+  Paint_DrawString_EN(20, 30, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
+  Paint_DrawString_EN(20, 60, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
+  Paint_DrawString_EN(20, 80, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
+  Paint_DrawString_EN(20, 100, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
+  Paint_DrawString_EN(20, 140, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
+  Paint_DrawString_EN(20, 170, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
+  delay(500);
+  // Paint_DrawRectangle(320,240,5,5,WHITE,DOT_PIXEL_8X8,DRAW_FILL_FULL);
+  delay(10000);
+
 }
 
 
