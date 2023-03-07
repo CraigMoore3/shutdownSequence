@@ -107,7 +107,7 @@ void loop()
   Paint_DrawString_EN(30, 140, "}", &Font16, BLUE, WHITE);
   delay(1000);
   Paint_DrawString_EN(20, 180, "ENDFUNCTION", &Font16, BLUE, WHITE);
-  delay(5000);
+  delay(2000);
 
 
   // *********************************************************************************************************************************
@@ -128,7 +128,7 @@ void loop()
   Paint_DrawString_EN(30, 160, "}", &Font16, BLUE, WHITE);
   delay(1000);
   Paint_DrawString_EN(20, 200, "ENDFUNCTION", &Font16, BLUE, WHITE);
-  delay(5000);
+  delay(2000);
 
 
   // *********************************************************************************************************************************
@@ -182,11 +182,11 @@ void loop()
   Paint_DrawRectangle(190, 180, 210, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
   Paint_DrawRectangle(230, 180, 250, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
   Paint_DrawRectangle(270, 180, 290, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
-  delay(750);
+  delay(1000);
 
   Paint_DrawString_EN(60, 90, "IS SOMEONE", &Font24, BLACK, RED);
   Paint_DrawString_EN(65, 120, "THERE?", &Font24, BLACK, RED);
-  delay(5000);
+  delay(3000);
 
 
   // *********************************************************************************************************************************
@@ -195,7 +195,7 @@ void loop()
   Paint_Clear(BLUE);
   Paint_DrawString_EN(20, 20, "FUNCTION", &Font16, BLUE, WHITE);
   delay(1000);
-  Paint_DrawString_EN(30, 40, "CALL shutdown_global();", &Font16, BLUE, WHITE);
+  Paint_DrawString_EN(30, 60, "CALL shutdown_global();", &Font16, BLUE, WHITE);
   delay(2000);
   Paint_DrawString_EN(200, 120, "WAIT", &Font16, BLUE, WHITE);
   delay(2000);
@@ -219,8 +219,8 @@ void loop()
   Paint_DrawRectangle(230, 60, 250, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
   Paint_DrawRectangle(270, 60, 290, 60, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
 
-  Paint_DrawString_EN(65, 90, "GLOBAL SHUTDOWN", &Font20, BLACK, WHITE);
-  Paint_DrawString_EN(105, 130, "INIT", &Font20, BLACK, WHITE);
+  Paint_DrawString_EN(55, 90, "GLOBAL SHUTDOWN", &Font20, BLACK, WHITE);
+  Paint_DrawString_EN(125, 130, "INIT", &Font20, BLACK, WHITE);
 
   Paint_DrawRectangle(30, 180, 50, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
   Paint_DrawRectangle(70, 180, 90, 180, WHITE, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
@@ -255,10 +255,9 @@ void loop()
   Paint_DrawString_EN(20, 80, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
   Paint_DrawString_EN(20, 100, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
   Paint_DrawString_EN(20, 140, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
-  Paint_DrawString_EN(20, 170, "YOU DO NOT UNDERSTAND", &Font24, BLACK, WHITE);
-  delay(500);
-  // Paint_DrawRectangle(320,240,5,5,WHITE,DOT_PIXEL_8X8,DRAW_FILL_FULL);
-  delay(10000);
+  Paint_DrawString_EN(20, 170, "YOU DO N", &Font24, BLACK, WHITE);
+  Paint_Clear(WHITE);
+  delay(60000);
 
 }
 
